@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/visit-sinj/static/css/main.15342f51.css",
+    "main.js": "/visit-sinj/static/js/main.2410de19.js",
+    "index.html": "/visit-sinj/index.html",
+    "main.15342f51.css.map": "/visit-sinj/static/css/main.15342f51.css.map",
+    "main.2410de19.js.map": "/visit-sinj/static/js/main.2410de19.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.15342f51.css",
+    "static/js/main.2410de19.js"
+  ]
+}
