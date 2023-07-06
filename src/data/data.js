@@ -1,32 +1,33 @@
 import React,{useState} from "react";
 import {BsChevronCompactLeft, BsChevronCompactRight} from "react-icons/bs"
+import Header from "../components/Header";
 
 const Slides = () => {
   const slides = [
     {
       url: "https://www.visitsinj.hr/media/k2/items/cache/9caa2793658f3cc387f216157300b1ce_XL.jpg",
-      title: "308",
+      title: "308.",
       caption : "Sinjska alka",
       text: "06.08.2023."
     },
 
     {
       url: "http://www.ethnodalmatia.com/images/destinacije/regija-sinjska-krajina/uploads/Panorama_Sinj_Dario_Bajurin.jpg",
-      title: "308",
-      caption : "Sinjska alka",
-      text: "06.08.2023."
-    },
-
-    {
-      url: "https://konobapojta.com/wp-content/gallery/interijer-interior/WhatsApp-Image-2021-07-13-at-20.28.45.jpeg",
-      title: "308",
+      title: "308.",
       caption : "Sinjska alka",
       text: "06.08.2023."
     },
 
     {
       url: "https://www.alka.hr/assets/images/1-Alkarski-Sinj-4.jpg",
-      title: "308",
+      title: "Priroda",
+      caption : "Sinjsko polje",
+      text: "06.08.2023."
+    },
+
+    {
+      url: "https://konobapojta.com/wp-content/gallery/interijer-interior/WhatsApp-Image-2021-07-13-at-20.28.45.jpeg",
+      title: "Gastro",
       caption : "Sinjska alka",
       text: "06.08.2023."
     },
@@ -55,12 +56,20 @@ const Slides = () => {
   }
 
 
-  return <div className="flex max-w-[2400px] h-[937px] w-full m-auto relative group">
-    <div style={{backgroundImage: `url(${slides[currentIndex].url})`}} className="w-full h-full bg-center bg-cover duration-500 brightness-[65%]">
-        <div className=" bg-white text-black w-full h-[400px] absolute bottom-5 text-center font-semibold text-7xl uppercase">{slides[currentIndex].caption}</div>
+  return <div>
+    <div className="flex max-w-[2400px] h-[937px] m-auto relative group">
+
+    <div style={{backgroundImage: `url(${slides[currentIndex].url})`}} className="w-full h-full bg-center bg-cover duration-500 brightness-[65%] "></div>
+    <Header/>
+
+
+        <div className=" bg-none text-white w-full h-[350px] absolute bottom-0 text-center text-6xl uppercase font-bold">{slides[currentIndex].title}
+        <div className="text-4xl mt-5 font-semibold">{slides[currentIndex].caption}</div>
+        <div className="text-2xl mt-5 font-semibold">{slides[currentIndex].text}</div>
         
         
-       
+        
+        
 
 
 
@@ -88,6 +97,7 @@ const Slides = () => {
 
 
 
+  </div>
   </div>;
 };
 
