@@ -1,5 +1,5 @@
 import './App.css';
-import Slides from './data/data';
+import Slides from './components/Slides';
 import Calendar from './components/Calendar';
 import Video from './components/Video';
 
@@ -9,7 +9,6 @@ function App() {
     <div className="App">
       <Slides/>
       <Calendar/>
-
       <Video/>
 
     </div>

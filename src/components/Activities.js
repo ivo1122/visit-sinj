@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Hero = () => {
+const Activities = () => {
     
   return (
     <div></div>
   )
 }
 
-export default Hero
+export default Activities
