@@ -2,6 +2,7 @@ import './App.css';
 import Slides from './components/Slides';
 import Calendar from './components/Calendar';
 import Video from './components/Video';
+import Activities from './components/Activities';
 
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <Slides/>
       <Calendar/>
       <Video/>
+      <Activities/>
 
     </div>
   );
