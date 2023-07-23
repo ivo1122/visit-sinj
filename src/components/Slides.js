@@ -64,8 +64,10 @@ const Slides = () => {
           <div className="text-3xl mt-5 font-medium">
             {slides[currentIndex].caption}
           </div>
-          <div className="text-2xl mt-5 font-semibold lowecase">
+          <div name="calendar" className="text-2xl mt-5 font-semibold lowecase">
             {slides[currentIndex].text}
+            
+            
           </div>
         </div>
 

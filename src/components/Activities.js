@@ -1,35 +1,31 @@
 import React from "react";
 import ToDoList from "../data/activities";
-import {  AiOutlineDoubleLeft,AiOutlineDoubleRight } from "react-icons/ai";
+import { AiOutlineDoubleLeft, AiOutlineDoubleRight } from "react-icons/ai";
 
 const Activities = () => {
   const scrollLeft = () => {
-    document.getElementById("scroller").scrollLeft -= 650;
+    document.getElementById("scroller").scrollLeft -= 350;
   };
 
   const scrollRight = () => {
-    document.getElementById("scroller").scrollLeft += 650;
+    document.getElementById("scroller").scrollLeft += 350;
   };
 
   return (
-    <>
-      <h1 className="font-bold text-3xl flex items-center justify-center">
+    <div className="relative">
+      <h1 className="font-bold flex items-center justify-center text-2xl my-5">
         Što raditi?
       </h1>
+      <div className="w-[100%] h-[100%] p-4 flex items-center justify-center ">
 
-      <div className="w-[100%] h-[100%] flex items-center justify-center relative">
-        <AiOutlineDoubleLeft onClick={scrollLeft}
-          size={30}
-          className="mx-auto absolute left-5 z-10 text-white cursor-pointer"
-        />
+        <div>
 
-        <ToDoList />
-        <AiOutlineDoubleRight onClick={scrollRight}
-          size={30}
-          className="mx-auto absolute right-5 z-10 text-white cursor-pointer"
-        />
+          <ToDoList />
+
+        </div>
+
       </div>
-    </>
+    </div>
   );
 };
 

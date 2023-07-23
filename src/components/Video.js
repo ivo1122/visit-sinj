@@ -5,7 +5,7 @@ const Video = () => {
   return (
     <div className='flex w-[100%] h-[100vh] relative '>
 
-      <video controls={false} autoPlay loop muted className='w-[100%] h-[100%] object-contain brightness-50 '>
+      <video controls={false} autoPlay loop muted className='w-[100%] h-[100%] object-cover brightness-50 '>
 
         <source src={video} type="video/mp4" />
         </video>

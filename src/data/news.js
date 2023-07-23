@@ -72,7 +72,7 @@ const News = () => {
     },
   ];
 
-  
+
   return (
     <div className=" w-[1400px] h-[400px] flex items-center justify-center my-5  ">
       <div
@@ -80,7 +80,7 @@ const News = () => {
         className="flex items-center justify-start gap-12 px-5 overflow-x-auto relative scrollbar-hide scroll-smooth"
       >
         {news.map((news) => (
-          <div className="my-5 cursor-pointer border hover:scale-105 ease-in-out duration-500">
+          <div  className="my-5 cursor-pointer hover:scale-105 ease-in-out duration-100 bg-amber-100">
             <img
               className="flex gap-10 w-[300px] h-[200px] object-cover"
               src={news.url}
